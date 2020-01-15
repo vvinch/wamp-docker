@@ -26,7 +26,7 @@ services:
     image: mariadb:alpine
     build: ../images/mariadb-alpine/image
     volumes:
-      - ${SQL_PATH}:/var/lib/mysql
+      - ${SQL_PATH:-mariadb-volume}:/var/lib/mysql
     environment:
       - DB_ROOT_PASS=${SQL_ROOT_PASSWORD}
       - DB_USER=${SQL_USER}
@@ -52,3 +52,6 @@ services:
 
 networks:
   wamp-net:
+
+volumes:
+  mariadb-volume:
