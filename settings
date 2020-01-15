@@ -1,0 +1,13 @@
+SITE_PORT=80
+ADMINER_PORT=81
+
+SITE_PATH=/home/pi/dvt/web/test/site
+LOG_PATH=/home/pi/dvt/web/test/logs
+SQL_PATH=/home/pi/dvt/web/test/db
+
+SQL_ROOT_PASSWORD=password
+
+SQL_USER=user
+SQL_PASS=password
+
+ADMINER_THEME=nette
